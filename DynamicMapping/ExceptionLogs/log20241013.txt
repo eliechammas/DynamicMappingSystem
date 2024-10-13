@@ -1,0 +1,40 @@
+2024-10-13 03:03:43.504 +02:00 [ERR] ERROR TRACE: 500 - Exception
+
+2024-10-13 03:03:43.521 +02:00 [ERR] Error Message: 
+Could not load type 'DataModels.Sections.External.Google.Room.RoomModel' from assembly 'DataModels, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null'.
+2024-10-13 03:03:43.523 +02:00 [INF] Instance: POST /api/Room/SendRoom
+2024-10-13 03:04:30.656 +02:00 [ERR] ERROR TRACE: 500 - Exception
+
+2024-10-13 03:04:30.686 +02:00 [ERR] Error Message: 
+Could not load type 'DataModels.Sections.External.Google.Room.RoomModel' from assembly 'DataModels, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null'.
+2024-10-13 03:04:30.690 +02:00 [INF] Instance: POST /api/Room/SendRoom
+2024-10-13 03:57:36.698 +02:00 [ERR] ERROR TRACE: 500 - Exception
+
+2024-10-13 03:57:36.745 +02:00 [ERR] Error Message: 
+Unauthorized
+2024-10-13 03:57:36.749 +02:00 [INF] Instance: POST /api/Room/SendRoom
+2024-10-13 04:10:35.415 +02:00 [ERR] ERROR TRACE: 500 - OverflowException
+
+2024-10-13 04:10:35.445 +02:00 [ERR] Error Message: 
+Value was either too large or too small for an Int32.
+2024-10-13 04:10:35.450 +02:00 [INF] Instance: POST /api/Room/SendRoom
+2024-10-13 04:12:03.361 +02:00 [ERR] ERROR TRACE: 500 - OverflowException
+
+2024-10-13 04:12:03.396 +02:00 [ERR] Error Message: 
+Value was either too large or too small for an Int16.
+2024-10-13 04:12:03.399 +02:00 [INF] Instance: POST /api/Room/SendRoom
+2024-10-13 04:12:26.347 +02:00 [ERR] ERROR TRACE: 500 - OverflowException
+
+2024-10-13 04:12:26.349 +02:00 [ERR] Error Message: 
+Value was either too large or too small for an Int16.
+2024-10-13 04:12:26.351 +02:00 [INF] Instance: POST /api/Room/SendRoom
+2024-10-13 04:15:24.107 +02:00 [ERR] ERROR TRACE: 500 - NullReferenceException
+
+2024-10-13 04:15:24.138 +02:00 [ERR] Error Message: 
+Object reference not set to an instance of an object.
+2024-10-13 04:15:24.140 +02:00 [INF] Instance: POST /api/Room/SendRoom
+2024-10-13 04:15:53.768 +02:00 [ERR] ERROR TRACE: 500 - TargetException
+
+2024-10-13 04:15:53.770 +02:00 [ERR] Error Message: 
+Non-static method requires a target.
+2024-10-13 04:15:53.771 +02:00 [INF] Instance: POST /api/Room/SendRoom

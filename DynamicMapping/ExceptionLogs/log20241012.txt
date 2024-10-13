@@ -1,0 +1,35 @@
+2024-10-12 11:28:51.687 +02:00 [ERR] RoomService - Error Code: 500 - Error Message: 
+Object does not match target type.
+2024-10-12 11:38:11.539 +02:00 [ERR] RoomService - Error Code: 500 - Error Message: 
+Object does not match target type.
+2024-10-12 12:05:28.419 +02:00 [ERR] RoomService - Error Code: 500 - Error Message: 
+Object does not match target type.
+2024-10-12 12:06:41.705 +02:00 [ERR] RoomService - Error Code: 500 - Error Message: 
+Object does not match target type.
+2024-10-12 12:11:42.112 +02:00 [ERR] RoomService - Error Code: 500 - Error Message: 
+Object must implement IConvertible.
+2024-10-12 12:12:45.435 +02:00 [ERR] RoomService - Error Code: 500 - Error Message: 
+Object does not match target type.
+2024-10-12 12:30:09.286 +02:00 [ERR] RoomService - Error Code: 500 - Error Message: 
+Object does not match target type.
+2024-10-12 12:32:22.532 +02:00 [ERR] RoomService - Error Code: 500 - Error Message: 
+Object does not match target type.
+2024-10-12 12:56:22.320 +02:00 [ERR] RoomService - Error Code: 500 - Error Message: 
+Object does not match target type.
+2024-10-12 12:56:56.045 +02:00 [ERR] RoomService - Error Code: 500 - Error Message: 
+Object does not match target type.
+2024-10-12 23:22:57.988 +02:00 [ERR] ERROR TRACE: 500 - FormatException
+
+2024-10-12 23:22:58.162 +02:00 [ERR] Error Message: 
+The input string 'hi' was not in a correct format.
+2024-10-12 23:22:58.333 +02:00 [INF] Instance: POST /api/Room/SendRoom
+2024-10-12 23:25:54.122 +02:00 [ERR] ERROR TRACE: 500 - FormatException
+
+2024-10-12 23:25:54.362 +02:00 [ERR] Error Message: 
+The input string 'hi' was not in a correct format.
+2024-10-12 23:25:54.596 +02:00 [INF] Instance: POST /api/Room/SendRoom
+2024-10-12 23:26:17.714 +02:00 [ERR] ERROR TRACE: 500 - FormatException
+
+2024-10-12 23:26:17.717 +02:00 [ERR] Error Message: 
+The input string 'hi' was not in a correct format.
+2024-10-12 23:26:17.720 +02:00 [INF] Instance: POST /api/Room/SendRoom

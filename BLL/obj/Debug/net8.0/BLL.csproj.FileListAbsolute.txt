@@ -1,0 +1,17 @@
+C:\My Documents\DIRS21\BLL\obj\Debug\net8.0\BLL.csproj.AssemblyReference.cache
+C:\My Documents\DIRS21\BLL\obj\Debug\net8.0\BLL.GeneratedMSBuildEditorConfig.editorconfig
+C:\My Documents\DIRS21\BLL\obj\Debug\net8.0\BLL.AssemblyInfoInputs.cache
+C:\My Documents\DIRS21\BLL\obj\Debug\net8.0\BLL.AssemblyInfo.cs
+C:\My Documents\DIRS21\BLL\obj\Debug\net8.0\BLL.csproj.CoreCompileInputs.cache
+C:\My Documents\DIRS21\BLL\bin\Debug\net8.0\BLL.deps.json
+C:\My Documents\DIRS21\BLL\bin\Debug\net8.0\BLL.dll
+C:\My Documents\DIRS21\BLL\bin\Debug\net8.0\BLL.pdb
+C:\My Documents\DIRS21\BLL\bin\Debug\net8.0\DAL.dll
+C:\My Documents\DIRS21\BLL\bin\Debug\net8.0\DataModels.dll
+C:\My Documents\DIRS21\BLL\bin\Debug\net8.0\DAL.pdb
+C:\My Documents\DIRS21\BLL\bin\Debug\net8.0\DataModels.pdb
+C:\My Documents\DIRS21\BLL\obj\Debug\net8.0\BLL.csproj.Up2Date
+C:\My Documents\DIRS21\BLL\obj\Debug\net8.0\BLL.dll
+C:\My Documents\DIRS21\BLL\obj\Debug\net8.0\refint\BLL.dll
+C:\My Documents\DIRS21\BLL\obj\Debug\net8.0\BLL.pdb
+C:\My Documents\DIRS21\BLL\obj\Debug\net8.0\ref\BLL.dll
