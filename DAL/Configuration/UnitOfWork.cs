@@ -28,33 +28,17 @@ namespace DAL.Configuration
 
         public async Task CompleteAsync()
         {
-            try
-            {
-                await _context.SaveChangesAsync();
-            }
-            catch(Exception ex)
-            {
-                _logger.LogError(ex, "Class UnitOfWork - CompleteAsync - error: " + ex.Message);
-            }
+            await _context.SaveChangesAsync();
         }
 
         public async Task TransactionalCompleteAsync()
         {
             using (var dbContextTransaction = _context.Database.BeginTransaction())
             {
-                try
-                {
-                    await _context.SaveChangesAsync();
-                    dbContextTransaction.Commit();
-                }
-                catch (Exception ex)
-                {
-                    _logger.LogError(ex, "Class UnitOfWork - TransactionalCompleteAsync - error: " + ex.Message);
-                    dbContextTransaction.Rollback();
-                }
+                await _context.SaveChangesAsync();
+                dbContextTransaction.Commit();
             }       
         }
-
 
         private bool disposed = false;
         protected virtual void Dispose(bool disposing)

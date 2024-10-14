@@ -25,7 +25,7 @@ namespace DAL.Services
 
         #region CRUD
         
-        public virtual async IAsyncEnumerable<T> GetAllAsync()  //IAsyncEnumerable is introduced in .net core 3.0
+        public virtual async IAsyncEnumerable<T> GetAllAsync() 
         {
             var query = dbSet.AsAsyncEnumerable();
             await foreach (var record in query)
