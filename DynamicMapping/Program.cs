@@ -47,6 +47,7 @@ namespace DynamicMapping
             builder.Services.AddScoped<DAL.Configuration.IUnitOfWork, DAL.Configuration.UnitOfWork>();
             builder.Services.AddTransient<BLL.Services.Interfaces.IBaseService, BLL.Services.BaseService>();
             builder.Services.AddScoped<BLL.Services.Interfaces.IRoomService, BLL.Services.RoomService>();
+            builder.Services.AddScoped<BLL.Services.Interfaces.IReservationService, BLL.Services.ReservationService>();
             builder.Services.AddHttpContextAccessor();
 
             // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle

@@ -32,7 +32,7 @@ namespace DynamicMapping.Controllers
         /// <param name="input">Internal Data & Model</param>
         /// <returns>External Model</returns>
         [HttpPost]
-        [Route("SendRoom")]
+        [Route("Send")]
         public async Task<ActionResult<SendRoomOutput>> SendRoomToPartner(SendRoomInput input)
         {
             SendRoomOutput output = new SendRoomOutput();
@@ -91,7 +91,7 @@ namespace DynamicMapping.Controllers
         /// <param name="input">External Data & Model</param>
         /// <returns>Succeeded or Not</returns>
         [HttpPost]
-        [Route("ReceiveRoom")]
+        [Route("Receive")]
         public async Task<ActionResult<ReceiveRoomOutput>> ReceiveRoomFromPartner(ReceiveRoomInput input)
         {
             ReceiveRoomOutput output = new ReceiveRoomOutput();

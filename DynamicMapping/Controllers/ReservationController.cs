@@ -33,7 +33,7 @@ namespace DynamicMapping.Controllers
         /// <param name="input">Internal Data & Model</param>
         /// <returns>External Model</returns>
         [HttpPost]
-        [Route("SendReservation")]
+        [Route("Send")]
         public async Task<ActionResult<SendReservationOutput>> SendReservationToPartner(SendReservationInput input)
         {
             SendReservationOutput output = new SendReservationOutput();
@@ -90,7 +90,7 @@ namespace DynamicMapping.Controllers
         /// <param name="input">External Data & Model</param>
         /// <returns>Succeeded or Not</returns>
         [HttpPost]
-        [Route("ReceiveReservation")]
+        [Route("Receive")]
         public async Task<ActionResult<ReceiveReservationOutput>> ReceiveReservationFromPartner(ReceiveReservationInput input)
         {
             ReceiveReservationOutput output = new ReceiveReservationOutput();
