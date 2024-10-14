@@ -25,34 +25,33 @@ namespace BLL.Services
         }
 
         #region Methods
-        
+        /// <summary>
+        /// Method that get reservation data from database and call the map method 
+        /// to transfer internal reservation data model into external reservation data model
+        /// </summary>
+        /// <param name="input"></param>
+        /// <returns></returns>
         public async Task<SendReservationOutput> SendReservation(SendReservationInput input)
         {
             SendReservationOutput resultToReturn = new SendReservationOutput();
-            
-            //var Reservation = await _uow.ReservationRepo.GetById(input.Id).ConfigureAwait(false);
-            var Reservation = new ReservationModel() 
-            {
-                Id = 1,
-                RoomId = 1,
-                UserId = 10,
-                DateFrom = DateTime.Parse("2024.10.01"),
-                DateUntil = DateTime.Parse("2024.10.10"),
-                NOP = 1,
-                IsBreakfast= true,
-            };
 
-            if(Reservation != null)
+            //var Reservation = await _uow.ReservationRepo.GetById(input.Id).ConfigureAwait(false);
+            /// This is dummy data as if returned from database
+            var reservation = new ReservationModel() 
+            {Id = 1,RoomId = 1,UserId = 10,DateFrom = DateTime.Parse("2024.10.01"),DateUntil = DateTime.Parse("2024.10.10"),NOP = 1,IsBreakfast= true,};
+
+            if(reservation != null && reservation.Id > 0)
             {
                 ReservationModel entity = new ReservationModel();
-                entity.Id = Reservation.Id;
-                entity.RoomId = Reservation.RoomId;
-                entity.UserId = Reservation.UserId;
-                entity.DateFrom = Reservation.DateFrom;
-                entity.DateUntil = Reservation.DateUntil;
-                entity.IsBreakfast = Reservation.IsBreakfast;
-                entity.NOP = Reservation.NOP;
+                entity.Id = reservation.Id;
+                entity.RoomId = reservation.RoomId;
+                entity.UserId = reservation.UserId;
+                entity.DateFrom = reservation.DateFrom;
+                entity.DateUntil = reservation.DateUntil;
+                entity.IsBreakfast = reservation.IsBreakfast;
+                entity.NOP = reservation.NOP;
 
+                // calling the map method
                 Object result = Core.MapHandler.Map(entity, BLL.Enums.EnumInternalModel.Reservation, input.TargetTypeModel);
 
                 resultToReturn.TargetModel = result;
@@ -65,6 +64,11 @@ namespace BLL.Services
             return resultToReturn;
         }
 
+        /// <summary>
+        /// Method that receive room data from external model, map it into internal room model and save it to the database 
+        /// </summary>
+        /// <param name="input"></param>
+        /// <returns></returns>
         public async Task<ReceiveReservationOutput> ReceiveReservation(ReceiveReservationInput input)
         {
             ReceiveReservationOutput resultToReturn = new ReceiveReservationOutput();

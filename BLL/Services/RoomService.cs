@@ -24,35 +24,30 @@ namespace BLL.Services
         }
 
         #region Methods
+        /// <summary>
+        /// Method that get room data from database and call the map method 
+        /// to transfer internal room data model into external room data model
+        /// </summary>
+        /// <param name="input"></param>
+        /// <returns></returns>
         public async Task<SendRoomOutput> SendRoom(SendRoomInput input)
         {
             SendRoomOutput resultToReturn = new SendRoomOutput();
             
             //var room = await _uow.RoomRepo.GetById(input.Id).ConfigureAwait(false);
-            /// This is an example returnbecause no database yet to get data from
+            /// This is dummy data as if returned from database
             var room = new RoomModel() 
-            {
-                Id = 1,
-                Code = "12345",
-                Name = "TheKingRoom",
-                Description = "This is the king room",
-                Area = 100,
-                Floor = "5"
-            };
+            {Id = 1,Code = "ABC123",Name = "Main_Room",Description = "This is the main room",Area = 100,Floor = "5"};
 
-            if(room != null)
+            if(room != null && room.Id > 0)
             {
-                if (room.Id <= 0)
-                {
-                    //resultToReturn;
-                }
-
                 RoomModel entity = new RoomModel();
                 entity.Id = room.Id;
                 entity.Name = room.Name;
                 entity.Description = room.Description;
                 entity.Area = 0;
 
+                // calling the map method
                 Object result = Core.MapHandler.Map(entity, BLL.Enums.EnumInternalModel.Room, input.TargetTypeModel);
 
                 resultToReturn.TargetModel = result;
@@ -65,6 +60,11 @@ namespace BLL.Services
             return resultToReturn;
         }
 
+        /// <summary>
+        /// Method that receive room data from external model, map it into internal room model and save it to the database 
+        /// </summary>
+        /// <param name="input"></param>
+        /// <returns></returns>
         public async Task<ReceiveRoomOutput> ReceiveRoom(ReceiveRoomInput input)
         {
             ReceiveRoomOutput resultToReturn = new ReceiveRoomOutput();

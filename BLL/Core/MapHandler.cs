@@ -17,6 +17,15 @@ namespace BLL.Core
 {
     internal static class MapHandler
     {
+        /// <summary>
+        /// Mapping method that handle the data mapping between two generic Source-Target models by specifying 
+        /// the source model class namespace path + name through the Source param and 
+        /// the target model class namespace path + name through the Target param
+        /// </summary>
+        /// <param name="data">Source Data</param>
+        /// <param name="Source">Source Model</param>
+        /// <param name="Target">Target Model</param>
+        /// <returns>Target Data Mapped</returns>
         internal static Object Map(Object data, string Source, string Target)
         {
             var objSource = Activator.CreateInstance("DataModels", Source).Unwrap();
@@ -24,7 +33,8 @@ namespace BLL.Core
 
             Type objSourceType = objSource.GetType();
             Type objTargetType = objTarget.GetType();
-                
+            
+            // Assign data to the source model instance
             objSource = data;
 
             PropertyInfo[] objSourceProperties = objSourceType.GetProperties();

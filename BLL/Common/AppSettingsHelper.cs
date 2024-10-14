@@ -7,6 +7,9 @@ using System.Threading.Tasks;
 
 namespace BLL.Common
 {
+    /// <summary>
+    /// helper class that allows using appsettings.config data within the application from static classes 
+    /// </summary>
     public static class AppSettingsHelper
     {
         private static IConfiguration _config;
