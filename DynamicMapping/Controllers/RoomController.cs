@@ -65,7 +65,8 @@ namespace DynamicMapping.Controllers
                     break;
 
                 default:
-                    break;
+                    output.Invalid_Input_TargetType_NotFound();
+                    return output;
             }
             #endregion
 
@@ -121,7 +122,8 @@ namespace DynamicMapping.Controllers
                     break;
 
                 default:
-                    break;
+                    output.Invalid_Input_SourceType_NotFound();
+                    return output;
             }
 
             output = await _RoomService.ReceiveRoom(input);

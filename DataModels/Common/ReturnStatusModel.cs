@@ -82,11 +82,24 @@ namespace DataModels.Common
             this.ReturnStatus.ReturnMessage = "Invalid Input Data - Target Type is empty!";
             ReturnStatuses.Add(this.ReturnStatus);
         }
+        public void Invalid_Input_TargetType_NotFound()
+        {
+            this.ReturnStatus.ReturnCode = 422;
+            this.ReturnStatus.ReturnMessage = "Invalid Input Data - Target Type is not found!";
+            ReturnStatuses.Add(this.ReturnStatus);
+        }
         public void Invalid_Input_SourceType()
         {
             ReturnStatus returnStatus = new ReturnStatus();
             returnStatus.ReturnCode = 422;
             returnStatus.ReturnMessage = "Invalid Input Data - Source Type is empty!";
+            ReturnStatuses.Add(returnStatus);
+        }
+        public void Invalid_Input_SourceType_NotFound()
+        {
+            ReturnStatus returnStatus = new ReturnStatus();
+            returnStatus.ReturnCode = 422;
+            returnStatus.ReturnMessage = "Invalid Input Data - Source Type is not found!";
             ReturnStatuses.Add(returnStatus);
         }
         public void Invalid_Input_SourceModel()

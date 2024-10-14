@@ -65,7 +65,8 @@ namespace DynamicMapping.Controllers
                     break;
 
                 default:
-                    break;
+                    output.Invalid_Input_TargetType_NotFound();
+                    return output;
             }
 
             output = await _ReservationService.SendReservation(input);
@@ -120,7 +121,8 @@ namespace DynamicMapping.Controllers
                     break;
 
                 default:
-                    break;
+                    output.Invalid_Input_SourceType_NotFound();
+                    return output;
             }
 
             output = await _ReservationService.ReceiveReservation(input);
