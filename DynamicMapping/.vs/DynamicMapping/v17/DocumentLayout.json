@@ -3,15 +3,49 @@
   "WorkspaceRootPath": "C:\\My Documents\\DIRS21\\DynamicMapping\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{0B993E95-0C99-41F6-8021-AE306DC25F62}|..\\DAL\\DAL.csproj|c:\\my documents\\dirs21\\dal\\services\\igenericrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0B993E95-0C99-41F6-8021-AE306DC25F62}|..\\DAL\\DAL.csproj|c:\\my documents\\dirs21\\dal\\services\\genericrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0B993E95-0C99-41F6-8021-AE306DC25F62}|..\\DAL\\DAL.csproj|c:\\my documents\\dirs21\\dal\\repositories\\roomrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0B993E95-0C99-41F6-8021-AE306DC25F62}|..\\DAL\\DAL.csproj|c:\\my documents\\dirs21\\dal\\configuration\\unitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0B993E95-0C99-41F6-8021-AE306DC25F62}|..\\DAL\\DAL.csproj|c:\\my documents\\dirs21\\dal\\configuration\\iunitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D0B752A8-12A1-4BC1-B830-4EFD1B370CB3}|..\\BLL\\BLL.csproj|c:\\my documents\\dirs21\\bll\\services\\reservationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{D0B752A8-12A1-4BC1-B830-4EFD1B370CB3}|..\\BLL\\BLL.csproj|c:\\my documents\\dirs21\\bll\\services\\roomservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0E2B1F4D-83AA-4512-BDA1-36F778CA30B6}|DynamicMapping.csproj|c:\\my documents\\dirs21\\dynamicmapping\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0E2B1F4D-83AA-4512-BDA1-36F778CA30B6}|DynamicMapping.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D0B752A8-12A1-4BC1-B830-4EFD1B370CB3}|..\\BLL\\BLL.csproj|c:\\my documents\\dirs21\\bll\\services\\baseservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0E2B1F4D-83AA-4512-BDA1-36F778CA30B6}|DynamicMapping.csproj|c:\\my documents\\dirs21\\dynamicmapping\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{0E2B1F4D-83AA-4512-BDA1-36F778CA30B6}|DynamicMapping.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+      "AbsoluteMoniker": "D:0:0:{D0B752A8-12A1-4BC1-B830-4EFD1B370CB3}|..\\BLL\\BLL.csproj|c:\\my documents\\dirs21\\bll\\common\\appsettingshelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D0B752A8-12A1-4BC1-B830-4EFD1B370CB3}|..\\BLL\\BLL.csproj|c:\\my documents\\dirs21\\bll\\enums\\internalmodelenum.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D0B752A8-12A1-4BC1-B830-4EFD1B370CB3}|..\\BLL\\BLL.csproj|c:\\my documents\\dirs21\\bll\\core\\maphandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0E2B1F4D-83AA-4512-BDA1-36F778CA30B6}|DynamicMapping.csproj|c:\\my documents\\dirs21\\dynamicmapping\\controllers\\baseapicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0E2B1F4D-83AA-4512-BDA1-36F778CA30B6}|DynamicMapping.csproj|solutionrelative:controllers\\baseapicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0E2B1F4D-83AA-4512-BDA1-36F778CA30B6}|DynamicMapping.csproj|c:\\my documents\\dirs21\\dynamicmapping\\controllers\\roomcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0E2B1F4D-83AA-4512-BDA1-36F778CA30B6}|DynamicMapping.csproj|solutionrelative:controllers\\roomcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0E2B1F4D-83AA-4512-BDA1-36F778CA30B6}|DynamicMapping.csproj|c:\\my documents\\dirs21\\dynamicmapping\\controllers\\reservationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0E2B1F4D-83AA-4512-BDA1-36F778CA30B6}|DynamicMapping.csproj|solutionrelative:controllers\\reservationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -38,39 +72,171 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "RoomService.cs",
-              "DocumentMoniker": "C:\\My Documents\\DIRS21\\BLL\\Services\\RoomService.cs",
-              "RelativeDocumentMoniker": "..\\BLL\\Services\\RoomService.cs",
-              "ToolTip": "C:\\My Documents\\DIRS21\\BLL\\Services\\RoomService.cs",
-              "RelativeToolTip": "..\\BLL\\Services\\RoomService.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAqAAAA",
+              "Title": "IGenericRepository.cs",
+              "DocumentMoniker": "C:\\My Documents\\DIRS21\\DAL\\Services\\IGenericRepository.cs",
+              "RelativeDocumentMoniker": "..\\DAL\\Services\\IGenericRepository.cs",
+              "ToolTip": "C:\\My Documents\\DIRS21\\DAL\\Services\\IGenericRepository.cs",
+              "RelativeToolTip": "..\\DAL\\Services\\IGenericRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-13T11:17:10.132Z",
+              "WhenOpened": "2024-10-14T02:25:19.94Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\My Documents\\DIRS21\\DynamicMapping\\Program.cs",
-              "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "C:\\My Documents\\DIRS21\\DynamicMapping\\Program.cs",
-              "RelativeToolTip": "Program.cs",
-              "ViewState": "AQIAABoAAAAAAAAAAAAAACYAAAAAAAAA",
+              "Title": "GenericRepository.cs",
+              "DocumentMoniker": "C:\\My Documents\\DIRS21\\DAL\\Services\\GenericRepository.cs",
+              "RelativeDocumentMoniker": "..\\DAL\\Services\\GenericRepository.cs",
+              "ToolTip": "C:\\My Documents\\DIRS21\\DAL\\Services\\GenericRepository.cs",
+              "RelativeToolTip": "..\\DAL\\Services\\GenericRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAARAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-13T11:08:05.248Z"
+              "WhenOpened": "2024-10-14T02:24:44.308Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\My Documents\\DIRS21\\DynamicMapping\\appsettings.json",
-              "RelativeDocumentMoniker": "appsettings.json",
-              "ToolTip": "C:\\My Documents\\DIRS21\\DynamicMapping\\appsettings.json",
-              "RelativeToolTip": "appsettings.json",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAEAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-10-13T11:07:44.767Z"
+              "Title": "RoomRepository.cs",
+              "DocumentMoniker": "C:\\My Documents\\DIRS21\\DAL\\Repositories\\RoomRepository.cs",
+              "RelativeDocumentMoniker": "..\\DAL\\Repositories\\RoomRepository.cs",
+              "ToolTip": "C:\\My Documents\\DIRS21\\DAL\\Repositories\\RoomRepository.cs",
+              "RelativeToolTip": "..\\DAL\\Repositories\\RoomRepository.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAACoAAAASAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-14T02:23:25.591Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "UnitOfWork.cs",
+              "DocumentMoniker": "C:\\My Documents\\DIRS21\\DAL\\Configuration\\UnitOfWork.cs",
+              "RelativeDocumentMoniker": "..\\DAL\\Configuration\\UnitOfWork.cs",
+              "ToolTip": "C:\\My Documents\\DIRS21\\DAL\\Configuration\\UnitOfWork.cs",
+              "RelativeToolTip": "..\\DAL\\Configuration\\UnitOfWork.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-14T02:22:07.727Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "IUnitOfWork.cs",
+              "DocumentMoniker": "C:\\My Documents\\DIRS21\\DAL\\Configuration\\IUnitOfWork.cs",
+              "RelativeDocumentMoniker": "..\\DAL\\Configuration\\IUnitOfWork.cs",
+              "ToolTip": "C:\\My Documents\\DIRS21\\DAL\\Configuration\\IUnitOfWork.cs",
+              "RelativeToolTip": "..\\DAL\\Configuration\\IUnitOfWork.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAXAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-14T02:22:03.84Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ReservationService.cs",
+              "DocumentMoniker": "C:\\My Documents\\DIRS21\\BLL\\Services\\ReservationService.cs",
+              "RelativeDocumentMoniker": "..\\BLL\\Services\\ReservationService.cs",
+              "ToolTip": "C:\\My Documents\\DIRS21\\BLL\\Services\\ReservationService.cs",
+              "RelativeToolTip": "..\\BLL\\Services\\ReservationService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABYAAAArAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-14T01:53:57.542Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "RoomService.cs",
+              "DocumentMoniker": "C:\\My Documents\\DIRS21\\BLL\\Services\\RoomService.cs",
+              "RelativeDocumentMoniker": "..\\BLL\\Services\\RoomService.cs",
+              "ToolTip": "C:\\My Documents\\DIRS21\\BLL\\Services\\RoomService.cs",
+              "RelativeToolTip": "..\\BLL\\Services\\RoomService.cs",
+              "ViewState": "AQIAADsAAAAAAAAAAAAAAD8AAAB7AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-14T01:44:27.527Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "AppSettingsHelper.cs",
+              "DocumentMoniker": "C:\\My Documents\\DIRS21\\BLL\\Common\\AppSettingsHelper.cs",
+              "RelativeDocumentMoniker": "..\\BLL\\Common\\AppSettingsHelper.cs",
+              "ToolTip": "C:\\My Documents\\DIRS21\\BLL\\Common\\AppSettingsHelper.cs",
+              "RelativeToolTip": "..\\BLL\\Common\\AppSettingsHelper.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-14T01:44:18.637Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "BaseService.cs",
+              "DocumentMoniker": "C:\\My Documents\\DIRS21\\BLL\\Services\\BaseService.cs",
+              "RelativeDocumentMoniker": "..\\BLL\\Services\\BaseService.cs",
+              "ToolTip": "C:\\My Documents\\DIRS21\\BLL\\Services\\BaseService.cs",
+              "RelativeToolTip": "..\\BLL\\Services\\BaseService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAArAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-14T01:43:38.903Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "InternalModelEnum.cs",
+              "DocumentMoniker": "C:\\My Documents\\DIRS21\\BLL\\Enums\\InternalModelEnum.cs",
+              "RelativeDocumentMoniker": "..\\BLL\\Enums\\InternalModelEnum.cs",
+              "ToolTip": "C:\\My Documents\\DIRS21\\BLL\\Enums\\InternalModelEnum.cs",
+              "RelativeToolTip": "..\\BLL\\Enums\\InternalModelEnum.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-14T01:43:27.616Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "RoomController.cs",
+              "DocumentMoniker": "C:\\My Documents\\DIRS21\\DynamicMapping\\Controllers\\RoomController.cs",
+              "RelativeDocumentMoniker": "Controllers\\RoomController.cs",
+              "ToolTip": "C:\\My Documents\\DIRS21\\DynamicMapping\\Controllers\\RoomController.cs",
+              "RelativeToolTip": "Controllers\\RoomController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-14T00:48:47.976Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "MapHandler.cs",
+              "DocumentMoniker": "C:\\My Documents\\DIRS21\\BLL\\Core\\MapHandler.cs",
+              "RelativeDocumentMoniker": "..\\BLL\\Core\\MapHandler.cs",
+              "ToolTip": "C:\\My Documents\\DIRS21\\BLL\\Core\\MapHandler.cs",
+              "RelativeToolTip": "..\\BLL\\Core\\MapHandler.cs",
+              "ViewState": "AQIAAC4AAAAAAAAAAAAAAFEAAAA3AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-14T00:40:25.524Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "BaseApiController.cs",
+              "DocumentMoniker": "C:\\My Documents\\DIRS21\\DynamicMapping\\Controllers\\BaseApiController.cs",
+              "RelativeDocumentMoniker": "Controllers\\BaseApiController.cs",
+              "ToolTip": "C:\\My Documents\\DIRS21\\DynamicMapping\\Controllers\\BaseApiController.cs",
+              "RelativeToolTip": "Controllers\\BaseApiController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAOAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-14T00:35:00.085Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "ReservationController.cs",
+              "DocumentMoniker": "C:\\My Documents\\DIRS21\\DynamicMapping\\Controllers\\ReservationController.cs",
+              "RelativeDocumentMoniker": "Controllers\\ReservationController.cs",
+              "ToolTip": "C:\\My Documents\\DIRS21\\DynamicMapping\\Controllers\\ReservationController.cs",
+              "RelativeToolTip": "Controllers\\ReservationController.cs",
+              "ViewState": "AQIAAEAAAAAAAAAAAAAAAFoAAAAlAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-13T23:46:33.131Z"
             }
           ]
         }
