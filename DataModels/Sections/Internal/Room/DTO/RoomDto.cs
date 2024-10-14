@@ -25,7 +25,7 @@ namespace DataModels.Sections.Internal.Room.DTO
             {
                 TargetModel = new object();
             }
-
+            public string TargetType { get; set; }
             public Object TargetModel { get; set; }
         }
 

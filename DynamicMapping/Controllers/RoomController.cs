@@ -5,6 +5,7 @@ using System.Linq;
 using System.Text.Json;
 using System.Threading.Tasks;
 using BLL.Services.Interfaces;
+using DataModels.Common;
 using DynamicMapping.Validations;
 using Microsoft.AspNetCore.Cors;
 using Microsoft.AspNetCore.Mvc;
@@ -71,6 +72,7 @@ namespace DynamicMapping.Controllers
             #endregion
 
             output = await _RoomService.SendRoom(input);
+            output.TargetType = input.TargetType;
 
             #region Output Validation
             var outputErrors = validation.ValidateOutputSendRoomToPartner(output);
@@ -113,12 +115,12 @@ namespace DynamicMapping.Controllers
             {
                 case "Google":
                     input.SourceTypeModel = _configuration.GetSection("ExternalModels").GetSection("Google").GetValue<string>("Room").ToString();
-                    input.SourceModel = JsonSerializer.Deserialize<DataModels.Sections.External.Google.Room.RoomModel>(input.SourceModel.ToString(), JsonSerializerOptions.Default);
+                    input.SourceModel = JsonSerializer.Deserialize<DataModels.Sections.External.Google.Room.RoomModel>(JsonSerializer.Serialize<Object>(input.SourceModel), JsonSerializerOptions.Default);
                     break;
 
                 case "Booking":
                     input.SourceTypeModel = _configuration.GetSection("ExternalModels").GetSection("Booking").GetValue<string>("Room").ToString();
-                    input.SourceModel = JsonSerializer.Deserialize<DataModels.Sections.External.Booking.Room.ReservationModel>(input.SourceModel.ToString(), JsonSerializerOptions.Default);
+                    input.SourceModel = JsonSerializer.Deserialize<DataModels.Sections.External.Booking.Room.ReservationModel>(JsonSerializer.Serialize<Object>(input.SourceModel), JsonSerializerOptions.Default);
                     break;
 
                 default:

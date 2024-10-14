@@ -1,4 +1,5 @@
-﻿using DataModels.Common;
+﻿using BLL.Common;
+using DataModels.Common;
 using System.Text.Json;
 using static DataModels.Sections.Internal.Reservation.DTO.ReservationDto;
 using static DataModels.Sections.Internal.Room.DTO.RoomDto;
@@ -10,7 +11,7 @@ namespace DynamicMapping.Validations
         /// <summary>
         /// Validate SendReservationToPartner action method input
         /// </summary>
-        /// <param name="input">SendReservationInput</param>
+        /// <param name="input">controller action method input</param>
         /// <returns>ReturnStatusModel</returns>
         public ReturnStatusModel ValidateInputSendReservationToPartner(SendReservationInput input)
         {
@@ -24,13 +25,20 @@ namespace DynamicMapping.Validations
             {
                 returnStatus.Invalid_Input_TargetType();
             }
+
+            // check if target type exist in our partners list
+            if (!AppSettingsHelper.Setting("ExternalModels").GetChildren().Any(a => a.Key == input.TargetType))
+            {
+                returnStatus.Invalid_Input_TargetType_NotFound();
+            }
+
             return returnStatus;
         }
 
         /// <summary>
         /// Validate SendReservationToPartner action method output
         /// </summary>
-        /// <param name="output">SendReservationOutput</param>
+        /// <param name="output">controller action method output</param>
         /// <returns>ReturnStatusModel</returns>
         public ReturnStatusModel ValidateOutputSendReservationToPartner(SendReservationOutput output)
         {
@@ -44,20 +52,21 @@ namespace DynamicMapping.Validations
             switch (output.TargetModel)
             {
                 case "Google":
-                    if (JsonSerializer.Deserialize<DataModels.Sections.External.Google.Reservation.ReservationModel>(output.TargetModel.ToString()) == null)
+                    if (JsonSerializer.Deserialize<DataModels.Sections.External.Google.Reservation.ReservationModel>(JsonSerializer.Serialize<Object>(output.TargetModel)) == null)
                     {
                         returnStatus.Invalid_Output_TargetModel_IncompatibleFormat();
                     }
                     break;
 
                 case "Booking":
-                    if (JsonSerializer.Deserialize<DataModels.Sections.External.Booking.Reservation.ReservationModel>(output.TargetModel.ToString()) == null)
+                    if (JsonSerializer.Deserialize<DataModels.Sections.External.Booking.Reservation.ReservationModel>(JsonSerializer.Serialize<Object>(output.TargetModel)) == null)
                     {
                         returnStatus.Invalid_Output_TargetModel_IncompatibleFormat();
                     }
                     break;
 
                 default:
+                    returnStatus.Invalid_Input_TargetType_NotFound();
                     break;
             }
             return returnStatus;

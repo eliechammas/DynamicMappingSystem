@@ -1,4 +1,5 @@
-﻿using DataModels.Common;
+﻿using BLL.Common;
+using DataModels.Common;
 using Microsoft.Extensions.Configuration;
 using System.Text.Json;
 using static DataModels.Sections.Internal.Room.DTO.RoomDto;
@@ -10,7 +11,7 @@ namespace DynamicMapping.Validations
         /// <summary>
         /// Validate SendRoomToPartner action method input
         /// </summary>
-        /// <param name="input">SendRoomInput</param>
+        /// <param name="input">controller action method input</param>
         /// <returns>ReturnStatusModel</returns>
         public ReturnStatusModel ValidateInputSendRoomToPartner(SendRoomInput input)
         {
@@ -24,13 +25,20 @@ namespace DynamicMapping.Validations
             {
                 returnStatus.Invalid_Input_TargetType();
             }
+
+            // check if target type exist in our partners list
+            if(!AppSettingsHelper.Setting("ExternalModels").GetChildren().Any(a => a.Key == input.TargetType))
+            {
+                returnStatus.Invalid_Input_TargetType_NotFound();
+            }
+
             return returnStatus;
         }
 
         /// <summary>
         /// Validate SendRoomToParner action method output 
         /// </summary>
-        /// <param name="output">SendRoomOutput</param>
+        /// <param name="output">controller action method output</param>
         /// <returns>ReturnStatusModel</returns>
         public ReturnStatusModel ValidateOutputSendRoomToPartner(SendRoomOutput output)
         {
@@ -41,23 +49,24 @@ namespace DynamicMapping.Validations
                 returnStatus.Invalid_Output_TargetModel();
             }
 
-            switch (output.TargetModel)
+            switch (output.TargetType)
             {
                 case "Google":
-                    if (JsonSerializer.Deserialize<DataModels.Sections.External.Google.Room.RoomModel>(output.TargetModel.ToString()) == null)
+                    if (JsonSerializer.Deserialize<DataModels.Sections.External.Google.Room.RoomModel>(JsonSerializer.Serialize<Object>(output.TargetModel)) == null)
                     {
                         returnStatus.Invalid_Output_TargetModel_IncompatibleFormat();
                     }
                     break;
 
                 case "Booking":
-                    if (JsonSerializer.Deserialize<DataModels.Sections.External.Booking.Room.ReservationModel>(output.TargetModel.ToString()) == null)
+                    if (JsonSerializer.Deserialize<DataModels.Sections.External.Booking.Room.ReservationModel>(JsonSerializer.Serialize<Object>(output.TargetModel)) == null)
                     {
                         returnStatus.Invalid_Output_TargetModel_IncompatibleFormat();
                     }
                     break;
 
                 default:
+                    returnStatus.Invalid_Input_TargetType_NotFound();
                     break;
             }
             return returnStatus;
@@ -66,7 +75,7 @@ namespace DynamicMapping.Validations
         /// <summary>
         /// Validate ReceiveRoomFromPartner action method input
         /// </summary>
-        /// <param name="input">ReceiveRoomInput</param>
+        /// <param name="input">controller action method input</param>
         /// <returns>ReturnStatusModel</returns>
         public ReturnStatusModel ValidateReceiveRoomFromPartner(ReceiveRoomInput input)
         {
@@ -84,20 +93,21 @@ namespace DynamicMapping.Validations
             switch (input.SourceType)
             {
                 case "Google":
-                    if (JsonSerializer.Deserialize<DataModels.Sections.External.Google.Room.RoomModel>(input.SourceModel.ToString()) == null)
+                    if (JsonSerializer.Deserialize<DataModels.Sections.External.Google.Room.RoomModel>(JsonSerializer.Serialize<Object>(input.SourceModel)) == null)
                     {
                         returnStatus.Invalid_Input_SourceModel_IncompatibleFormat();
                     }
                     break;
 
                 case "Booking":
-                    if (JsonSerializer.Deserialize<DataModels.Sections.External.Booking.Room.ReservationModel>(input.SourceModel.ToString()) == null)
+                    if (JsonSerializer.Deserialize<DataModels.Sections.External.Booking.Room.ReservationModel>(JsonSerializer.Serialize<Object>(input.SourceModel)) == null)
                     {
                         returnStatus.Invalid_Input_SourceModel_IncompatibleFormat();
                     }
                     break;
 
                 default:
+                    returnStatus.Invalid_Input_SourceType_NotFound();
                     break;
             }
 

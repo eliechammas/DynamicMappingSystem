@@ -112,12 +112,12 @@ namespace DynamicMapping.Controllers
             {
                 case "Google":
                     input.SourceTypeModel = _configuration.GetSection("ExternalModels").GetSection("Google").GetValue<string>("Reservation").ToString();
-                    input.SourceModel = JsonSerializer.Deserialize<DataModels.Sections.External.Google.Reservation.ReservationModel>(input.SourceModel.ToString(), JsonSerializerOptions.Default);
+                    input.SourceModel = JsonSerializer.Deserialize<DataModels.Sections.External.Google.Reservation.ReservationModel>(JsonSerializer.Serialize<Object>(input.SourceModel), JsonSerializerOptions.Default);
                     break;
 
                 case "Booking":
                     input.SourceTypeModel = _configuration.GetSection("ExternalModels").GetSection("Booking").GetValue<string>("Reservation").ToString();
-                    input.SourceModel = JsonSerializer.Deserialize<DataModels.Sections.External.Booking.Reservation.ReservationModel>(input.SourceModel.ToString(), JsonSerializerOptions.Default);
+                    input.SourceModel = JsonSerializer.Deserialize<DataModels.Sections.External.Booking.Reservation.ReservationModel>(JsonSerializer.Serialize<Object>(input.SourceModel), JsonSerializerOptions.Default);
                     break;
 
                 default:
