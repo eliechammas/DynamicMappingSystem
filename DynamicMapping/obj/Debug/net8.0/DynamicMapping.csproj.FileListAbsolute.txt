@@ -86,3 +86,4 @@ C:\My Documents\DIRS21\DynamicMapping\obj\Debug\net8.0\refint\DynamicMapping.dll
 C:\My Documents\DIRS21\DynamicMapping\obj\Debug\net8.0\DynamicMapping.pdb
 C:\My Documents\DIRS21\DynamicMapping\obj\Debug\net8.0\DynamicMapping.genruntimeconfig.cache
 C:\My Documents\DIRS21\DynamicMapping\obj\Debug\net8.0\ref\DynamicMapping.dll
+C:\My Documents\DIRS21\DynamicMapping\obj\Debug\net8.0\DynamicMapping.sourcelink.json
