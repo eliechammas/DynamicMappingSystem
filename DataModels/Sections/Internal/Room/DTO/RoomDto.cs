@@ -9,33 +9,6 @@ namespace DataModels.Sections.Internal.Room.DTO
 {
     public class RoomDto
     {
-        #region Get Rooms
-        public class GetRoomsInput { }
-        public class GetRoomsOutput:ReturnStatusModel
-        {
-            public GetRoomsOutput()
-            {
-                Rooms = new List<RoomModel>();
-            }
-            public List<RoomModel> Rooms { get; set; }
-        }
-        #endregion
-
-        #region Get Room
-        public class GetRoomInput
-        {
-            public long Id { get; set; }
-        }
-        public class GetRoomOutput:ReturnStatusModel
-        {
-            public GetRoomOutput()
-            {
-                Room = new RoomModel();
-            }
-            public RoomModel Room { get; set; }
-        }
-        #endregion
-
         #region Send Room
         public class SendRoomInput
         {

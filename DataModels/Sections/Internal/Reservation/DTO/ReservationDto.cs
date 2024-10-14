@@ -9,33 +9,6 @@ namespace DataModels.Sections.Internal.Reservation.DTO
 {
     public class ReservationDto
     {
-        #region Get Reservation
-        public class GetReservationsInput { }
-        public class GetReservationsOutput:ReturnStatusModel
-        {
-            public GetReservationsOutput()
-            {
-                Reservations = new List<ReservationModel>();
-            }
-            public List<ReservationModel> Reservations { get; set; }
-        }
-        #endregion
-
-        #region Get Reservation
-        public class GetReservationInput
-        {
-            public long Id { get; set; }
-        }
-        public class GetReservationOutput:ReturnStatusModel
-        {
-            public GetReservationOutput()
-            {
-                Reservation = new ReservationModel();
-            }
-            public ReservationModel Reservation { get; set; }
-        }
-        #endregion
-
         #region Send Reservation
         public class SendReservationInput
         {

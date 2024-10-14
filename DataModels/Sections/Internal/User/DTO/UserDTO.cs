@@ -32,28 +32,4 @@ namespace DataModels.Sections.User.DTO
         public UserModel User { get; set; }
     }
 
-    public class UpdateUserInput
-    {
-        public UpdateUserInput()
-        {
-            User = new UserModel();
-        }
-        public UserModel User { get; set; }
-    }
-
-    public class UpdateUserOutput : ReturnStatusModel
-    {
-        public string Id { get; set; }
-    }
-
-    public class DeleteUserInput
-    {
-        public string Id { get; set; }
-    }
-
-    public class DeleteUserOutput : ReturnStatusModel
-    {
-        public Boolean IsDeleted { get; set; }
-    }
-
 }
