@@ -45,7 +45,8 @@ namespace BLL.Services
                 entity.Id = room.Id;
                 entity.Name = room.Name;
                 entity.Description = room.Description;
-                entity.Area = 0;
+                entity.Area = room.Area;
+                entity.Floor = room.Floor;
 
                 // calling the map method
                 Object result = Core.MapHandler.Map(entity, BLL.Enums.EnumInternalModel.Room, input.TargetTypeModel);
