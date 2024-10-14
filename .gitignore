@@ -1,0 +1,9 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/DynamicMapping/.vs/DynamicMapping/DesignTimeBuild/.dtbcache.v2
+/DynamicMapping/.vs/DynamicMapping/FileContentIndex/626239f9-b348-49e5-8281-385594b5b7e6.vsidx
+/DynamicMapping/.vs/DynamicMapping/FileContentIndex/aec5444e-5404-4381-b2f0-f2c163759cc2.vsidx
+/DynamicMapping/.vs/DynamicMapping/FileContentIndex/b2ba9aec-c8f2-48d6-b54c-d13154647853.vsidx
+/DynamicMapping/.vs/DynamicMapping/FileContentIndex/c4cc2bfa-de4e-4231-ab71-03ab17fea857.vsidx
