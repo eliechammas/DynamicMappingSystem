@@ -7,6 +7,11 @@ namespace DynamicMapping.Validations
 {
     public class RoomValidation
     {
+        /// <summary>
+        /// Validate SendRoomToPartner action method input
+        /// </summary>
+        /// <param name="input">SendRoomInput</param>
+        /// <returns>ReturnStatusModel</returns>
         public ReturnStatusModel ValidateInputSendRoomToPartner(SendRoomInput input)
         {
             ReturnStatusModel returnStatus = new ReturnStatusModel();
@@ -22,6 +27,11 @@ namespace DynamicMapping.Validations
             return returnStatus;
         }
 
+        /// <summary>
+        /// Validate SendRoomToParner action method output 
+        /// </summary>
+        /// <param name="output">SendRoomOutput</param>
+        /// <returns>ReturnStatusModel</returns>
         public ReturnStatusModel ValidateOutputSendRoomToPartner(SendRoomOutput output)
         {
             ReturnStatusModel returnStatus = new ReturnStatusModel();
@@ -53,6 +63,11 @@ namespace DynamicMapping.Validations
             return returnStatus;
         }
 
+        /// <summary>
+        /// Validate ReceiveRoomFromPartner action method input
+        /// </summary>
+        /// <param name="input">ReceiveRoomInput</param>
+        /// <returns>ReturnStatusModel</returns>
         public ReturnStatusModel ValidateReceiveRoomFromPartner(ReceiveRoomInput input)
         {
             ReturnStatusModel returnStatus = new ReturnStatusModel();
