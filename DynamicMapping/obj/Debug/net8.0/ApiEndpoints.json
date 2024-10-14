@@ -2,7 +2,7 @@
   {
     "ContainingType": "DynamicMapping.Controllers.ReservationController",
     "Method": "ReceiveReservationFromPartner",
-    "RelativePath": "api/Reservation/ReceiveReservation",
+    "RelativePath": "api/Reservation/Receive",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
@@ -28,7 +28,7 @@
   {
     "ContainingType": "DynamicMapping.Controllers.ReservationController",
     "Method": "SendReservationToPartner",
-    "RelativePath": "api/Reservation/SendReservation",
+    "RelativePath": "api/Reservation/Send",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
@@ -54,7 +54,7 @@
   {
     "ContainingType": "DynamicMapping.Controllers.RoomController",
     "Method": "ReceiveRoomFromPartner",
-    "RelativePath": "api/Room/ReceiveRoom",
+    "RelativePath": "api/Room/Receive",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
@@ -80,7 +80,7 @@
   {
     "ContainingType": "DynamicMapping.Controllers.RoomController",
     "Method": "SendRoomToPartner",
-    "RelativePath": "api/Room/SendRoom",
+    "RelativePath": "api/Room/Send",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
