@@ -10,13 +10,10 @@ namespace DynamicMapping.Controllers
 {   
     public class BaseApiController : ControllerBase
     {
-        //protected UserSessionByAccessToken ApiSession;
         protected void BaseInit()
         {
             if(this.Request == null || this.Request.HttpContext.Items["apiSession"] == null)
-            {
-                //ApiSession = (UserSessionByAccessToken)this.Request.HttpContext.Items["apiSession"];
-            }
+            {}
         }
     }
 }

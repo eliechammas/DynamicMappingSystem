@@ -5,8 +5,6 @@ using System.Linq;
 using System.Text.Json;
 using System.Threading.Tasks;
 using BLL.Services.Interfaces;
-using DataModels.Sections.External.Booking.Room;
-using DataModels.Sections.External.Google.Room;
 using DynamicMapping.Validations;
 using Microsoft.AspNetCore.Cors;
 using Microsoft.AspNetCore.Mvc;
@@ -28,6 +26,11 @@ namespace DynamicMapping.Controllers
             _configuration = configuration;
         }
 
+        /// <summary>
+        /// Action to get Room entity related data from our database, map it with specific-partner data models and then return the mapped data within this specific-partner model  
+        /// </summary>
+        /// <param name="input">Internal Data & Model</param>
+        /// <returns>External Model</returns>
         [HttpPost]
         [Route("SendRoom")]
         public async Task<ActionResult<SendRoomOutput>> SendRoomToPartner(SendRoomInput input)
@@ -46,6 +49,7 @@ namespace DynamicMapping.Controllers
             }
             #endregion
 
+            #region Specific-Partner Implementation
             switch (input.TargetType)
             {
                 case "Google":
@@ -63,6 +67,7 @@ namespace DynamicMapping.Controllers
                 default:
                     break;
             }
+            #endregion
 
             output = await _RoomService.SendRoom(input);
 
@@ -80,6 +85,11 @@ namespace DynamicMapping.Controllers
             return Ok(output);
         }
 
+        /// <summary>
+        /// Action to manage receiving Room related data from specific-partner model, map it with our internal data model and save it in our database
+        /// </summary>
+        /// <param name="input">External Data & Model</param>
+        /// <returns>Succeeded or Not</returns>
         [HttpPost]
         [Route("ReceiveRoom")]
         public async Task<ActionResult<ReceiveRoomOutput>> ReceiveRoomFromPartner(ReceiveRoomInput input)
@@ -113,9 +123,10 @@ namespace DynamicMapping.Controllers
                 default:
                     break;
             }
+
             output = await _RoomService.ReceiveRoom(input);
+
             return Ok(output);
-            
         }
     }
 }

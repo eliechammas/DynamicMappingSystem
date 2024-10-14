@@ -19,7 +19,7 @@ namespace DynamicMapping.Controllers
     public class ReservationController : BaseApiController
     {
         private readonly IReservationService _ReservationService;
-        private IConfiguration _configuration;
+        private readonly IConfiguration _configuration;
 
         public ReservationController(IReservationService ReservationService, IConfiguration configuration)
         {
@@ -27,6 +27,11 @@ namespace DynamicMapping.Controllers
             _configuration = configuration;
         }
 
+        /// <summary>
+        /// Action to get Reservation entity related data from our database, map it with specific-partner data models and then return the mapped data within this specific-partner model
+        /// </summary>
+        /// <param name="input">Internal Data & Model</param>
+        /// <returns>External Model</returns>
         [HttpPost]
         [Route("SendReservation")]
         public async Task<ActionResult<SendReservationOutput>> SendReservationToPartner(SendReservationInput input)
@@ -35,7 +40,7 @@ namespace DynamicMapping.Controllers
 
             #region Input Validation
             ReservationValidation validation = new ReservationValidation();
-            var errors = validation.ValidateSendReservationToPartner(input);
+            var errors = validation.ValidateInputSendReservationToPartner(input);
 
             if (errors.ReturnStatuses.Any())
             {
@@ -44,7 +49,6 @@ namespace DynamicMapping.Controllers
                 return output;
             }
             #endregion
-
 
             switch (input.TargetType)
             {
@@ -65,14 +69,44 @@ namespace DynamicMapping.Controllers
             }
 
             output = await _ReservationService.SendReservation(input);
+
+            #region Output Validation
+            var outputErrors = validation.ValidateOutputSendReservationToPartner(output);
+
+            if (outputErrors.ReturnStatuses.Any())
+            {
+                output.Invalid_Input();
+                output.ReturnStatuses = outputErrors.ReturnStatuses;
+                return output;
+            }
+            #endregion
+
             return Ok(output);
         }
 
+        /// <summary>
+        /// Action to manage receiving Reservation related data from specific-partner model, map it with our internal data model and save it in our database
+        /// </summary>
+        /// <param name="input">External Data & Model</param>
+        /// <returns>Succeeded or Not</returns>
         [HttpPost]
         [Route("ReceiveReservation")]
         public async Task<ActionResult<ReceiveReservationOutput>> ReceiveReservationFromPartner(ReceiveReservationInput input)
         {
             ReceiveReservationOutput output = new ReceiveReservationOutput();
+            
+            #region Input Validation
+            ReservationValidation validation = new ReservationValidation();
+            var errors = validation.ValidateReceiveReservationFromPartner(input);
+
+            if (errors.ReturnStatuses.Any())
+            {
+                output.Invalid_Input();
+                output.ReturnStatuses = errors.ReturnStatuses;
+                return output;
+            }
+            #endregion
+
             switch (input.SourceType)
             {
                 case "Google":
@@ -88,7 +122,9 @@ namespace DynamicMapping.Controllers
                 default:
                     break;
             }
+
             output = await _ReservationService.ReceiveReservation(input);
+            
             return Ok(output);
         }
     }
