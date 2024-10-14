@@ -10,6 +10,13 @@ namespace DynamicMapping.Infrastructure
     {
         private readonly ILogger<ExceptionHandler> _logger = logger;
 
+        /// <summary>
+        /// Handle global exceptions within the application 
+        /// </summary>
+        /// <param name="httpContext"></param>
+        /// <param name="exception"></param>
+        /// <param name="cancellationToken"></param>
+        /// <returns>Boolean & Send ProblemDetails class within the response</returns>
         public async ValueTask<Boolean> TryHandleAsync(HttpContext httpContext, Exception exception, CancellationToken cancellationToken)
         {
             var problemDetails = exception switch
