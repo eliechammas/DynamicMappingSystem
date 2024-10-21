@@ -71,7 +71,7 @@ namespace DynamicMapping.Controllers
             }
             #endregion
 
-            output = await _RoomService.SendRoom(input);
+            output = await _RoomService.SendRoom(input, HttpContext.Request.Path + "/" + input.Id);
             output.TargetType = input.TargetType;
 
             #region Output Validation

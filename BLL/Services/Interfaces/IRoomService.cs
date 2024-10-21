@@ -9,7 +9,7 @@ namespace BLL.Services.Interfaces
 {
     public interface IRoomService
     {
-        Task<SendRoomOutput> SendRoom(SendRoomInput input);
-        Task<ReceiveRoomOutput> ReceiveRoom(ReceiveRoomInput input);
+        Task<SendRoomOutput> SendRoom(SendRoomInput input, string? cacheKey = default);
+        Task<ReceiveRoomOutput> ReceiveRoom(ReceiveRoomInput input, string? cacheKey = default);
     }
 }

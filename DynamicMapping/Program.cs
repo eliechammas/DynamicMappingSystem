@@ -4,6 +4,8 @@ using DynamicMapping.Infrastructure;
 using Serilog;
 using System.Reflection;
 using Microsoft.EntityFrameworkCore;
+using DynamicMapping.CustomMiddlewares;
+using Microsoft.Extensions.DependencyInjection;
 
 namespace DynamicMapping
 {
@@ -19,7 +21,8 @@ namespace DynamicMapping
         {
             var builder = WebApplication.CreateBuilder(args);
 
-            // Add services to the container.
+            /// Add services to the container.
+            
             /// Serilog - Logging into files
             Log.Logger = new LoggerConfiguration()
                 .Enrich.FromLogContext()
@@ -54,6 +57,11 @@ namespace DynamicMapping
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen();
             
+            // add caching midleware
+            builder.Services.AddDistributedMemoryCache();
+            builder.Services.AddSingleton<BLL.Caching.ICacheService, BLL.Caching.CacheService>();
+
+
             var app = builder.Build();
 
             // Configure the HTTP request pipeline.
@@ -72,7 +80,6 @@ namespace DynamicMapping
             /// if builder.Services.AddProblemDetails is not added then we should add the predicate to the UseExceptionHandler like below
             /// app.UseExceptionHandler(ops => { });
             /// End Register ExceptionHandler Middleware
-
 
             app.UseHttpsRedirection();
             app.UseStaticFiles();

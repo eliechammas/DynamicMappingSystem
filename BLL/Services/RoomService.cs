@@ -1,4 +1,5 @@
-﻿using BLL.Services.Interfaces;
+﻿using BLL.Caching;
+using BLL.Services.Interfaces;
 using DAL.Configuration;
 using DAL.IRepositories;
 using DataModels.Sections.Internal.Room;
@@ -16,11 +17,13 @@ namespace BLL.Services
     {
         public readonly IConfiguration _configuration;
         public readonly IUnitOfWork _uow;
+        public readonly ICacheService _cacheService;
 
-        public RoomService(IUnitOfWork unitofwork, IConfiguration configuration) 
+        public RoomService(IUnitOfWork unitofwork, IConfiguration configuration, ICacheService cacheService) 
         { 
             _configuration = configuration;
             _uow = unitofwork;
+            _cacheService = cacheService;
         }
 
         #region Methods
@@ -30,10 +33,20 @@ namespace BLL.Services
         /// </summary>
         /// <param name="input"></param>
         /// <returns></returns>
-        public async Task<SendRoomOutput> SendRoom(SendRoomInput input)
+        public async Task<SendRoomOutput> SendRoom(SendRoomInput input, string? cacheKey = default)
         {
             SendRoomOutput resultToReturn = new SendRoomOutput();
-            
+
+            #region Get Caching
+            var targetModel = await _cacheService.GetAsync<Object>(cacheKey);
+            if(targetModel != null)
+            {
+                resultToReturn.TargetModel = targetModel;
+                resultToReturn.OK();
+                return resultToReturn;
+            }
+            #endregion
+
             //var room = await _uow.RoomRepo.GetById(input.Id).ConfigureAwait(false);
             /// This is dummy data as if returned from database
             var room = new RoomModel() 
@@ -53,6 +66,10 @@ namespace BLL.Services
 
                 resultToReturn.TargetModel = result;
                 resultToReturn.OK();
+
+                #region Set Caching
+                await _cacheService.SetAsync(cacheKey, result);
+                #endregion
             }
             else
             {
@@ -66,7 +83,7 @@ namespace BLL.Services
         /// </summary>
         /// <param name="input"></param>
         /// <returns></returns>
-        public async Task<ReceiveRoomOutput> ReceiveRoom(ReceiveRoomInput input)
+        public async Task<ReceiveRoomOutput> ReceiveRoom(ReceiveRoomInput input, string? cacheKey = default)
         {
             ReceiveRoomOutput resultToReturn = new ReceiveRoomOutput();
             

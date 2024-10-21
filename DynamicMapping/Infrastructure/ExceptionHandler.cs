@@ -43,7 +43,7 @@ namespace DynamicMapping.Infrastructure
                 },
                 ArgumentOutOfRangeException argumentOutOfRangeException => new ProblemDetails
                 {
-                    Status = (int)HttpStatusCode.NotFound,
+                    Status = (int)HttpStatusCode.RequestedRangeNotSatisfiable,
                     Type = argumentOutOfRangeException.GetType().Name,
                     Title = "Unexpected Error Occured",
                     Detail = argumentOutOfRangeException.Message,
@@ -51,7 +51,7 @@ namespace DynamicMapping.Infrastructure
                 },
                 InvalidCastException invalidCastException => new ProblemDetails
                 {
-                    Status = (int)HttpStatusCode.NotFound,
+                    Status = (int)HttpStatusCode.UnprocessableEntity,
                     Type = invalidCastException.GetType().Name,
                     Title = "Unexpected Error Occured",
                     Detail = invalidCastException.Message,
@@ -59,7 +59,7 @@ namespace DynamicMapping.Infrastructure
                 },
                 InvalidDataException invalidDataException => new ProblemDetails
                 {
-                    Status = (int)HttpStatusCode.NotFound,
+                    Status = (int)HttpStatusCode.UnprocessableEntity,
                     Type = invalidDataException.GetType().Name,
                     Title = "Unexpected Error Occured",
                     Detail = invalidDataException.Message,
@@ -67,7 +67,7 @@ namespace DynamicMapping.Infrastructure
                 },
                 InvalidOperationException invalidOperationException => new ProblemDetails
                 {
-                    Status = (int)HttpStatusCode.NotFound,
+                    Status = (int)HttpStatusCode.BadRequest,
                     Type = invalidOperationException.GetType().Name,
                     Title = "Unexpected Error Occured",
                     Detail = invalidOperationException.Message,
@@ -75,7 +75,7 @@ namespace DynamicMapping.Infrastructure
                 },
                 OverflowException overflowException => new ProblemDetails
                 {
-                    Status = (int)HttpStatusCode.NotFound,
+                    Status = (int)HttpStatusCode.NotAcceptable,
                     Type = overflowException.GetType().Name,
                     Title = "Unexpected Error Occured",
                     Detail = overflowException.Message,
