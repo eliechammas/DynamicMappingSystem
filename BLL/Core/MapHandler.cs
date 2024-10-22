@@ -15,7 +15,7 @@ using System.Data;
 
 namespace BLL.Core
 {
-    internal static class MapHandler
+    public static class MapHandler
     {
         /// <summary>
         /// Mapping method that handle the data mapping between two generic Source-Target models by specifying 
@@ -26,7 +26,7 @@ namespace BLL.Core
         /// <param name="Source">Source Model</param>
         /// <param name="Target">Target Model</param>
         /// <returns>Target Data Mapped</returns>
-        internal static Object Map(Object data, string Source, string Target)
+        public static Object Map(Object data, string Source, string Target)
         {
             var objSource = Activator.CreateInstance("DataModels", Source).Unwrap();
             var objTarget = Activator.CreateInstance("DataModels", Target).Unwrap();
