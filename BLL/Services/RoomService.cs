@@ -41,6 +41,7 @@ namespace BLL.Services
             var targetModel = await _cacheService.GetAsync<Object>(cacheKey);
             if(targetModel != null)
             {
+                await _cacheService.RefreshAsync(cacheKey);
                 resultToReturn.TargetModel = targetModel;
                 resultToReturn.OK();
                 return resultToReturn;
