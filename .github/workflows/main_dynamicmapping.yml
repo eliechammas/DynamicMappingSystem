@@ -22,15 +22,15 @@ jobs:
           dotnet-version: '8.x'
 
       - name: Build with dotnet
-        run: dotnet build ${{env.DOTNET_ROOT}}/DynamicMapping.sln --configuration Release 
+        run: dotnet build ./DynamicMapping/DynamicMapping.sln --configuration Release 
 
       - name: dotnet publish
-        run: dotnet publish ${{env.DOTNET_ROOT}}/DynamicMapping.sln --configuration Release --no-build
+        run: dotnet publish ./DynamicMapping/DynamicMapping.sln --configuration Release --no-build
 
       - name: Upload artifact for deployment job
         uses: actions/upload-artifact@v4
         with:
           name: .net-app
-          path: ${{env.DOTNET_ROOT}}/DynamicMapping.sln
+          path: ./DynamicMapping/DynamicMapping.sln
 
   
