@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("xUnitDM")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c821cde236483e37a1f77e21749d3a969557d62c")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+07c74837d0016eb58c45c298df6d37c4b29a59e5")]
 [assembly: System.Reflection.AssemblyProductAttribute("xUnitDM")]
 [assembly: System.Reflection.AssemblyTitleAttribute("xUnitDM")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
