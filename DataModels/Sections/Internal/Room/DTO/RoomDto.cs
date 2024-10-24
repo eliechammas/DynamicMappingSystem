@@ -28,7 +28,6 @@ namespace DataModels.Sections.Internal.Room.DTO
             public string TargetType { get; set; }
             public Object TargetModel { get; set; }
         }
-
         #endregion
 
         #region Receive Room
