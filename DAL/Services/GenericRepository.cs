@@ -40,28 +40,41 @@ namespace DAL.Services
             return query;
         }
 
-        public virtual async Task<IEnumerable<T>> GetAll(Expression<Func<T, bool>> filter = null, Func<IQueryable<T>, IOrderedQueryable<T>> orderBy = null, string includeProperties = "")
+        public virtual async Task<IEnumerable<T>> GetAll(Expression<Func<T, bool>> filter = null
+                                                        , Expression<Func<T, bool>> order = null 
+                                                        , Func<IQueryable<T>, IOrderedQueryable<T>> orderBy = null
+                                                        , string includeProperties = ""
+                                                        )
         {
-            
             IQueryable<T> query = dbSet;
 
+            /// filter is a predicate that is sent to the repository and based on it the dbSet is filtered
             if (filter != null)
             {
                 query = query.Where(filter);
             }
 
+            /// to include the related entities
             foreach (var includeProperty in includeProperties.Split(new char[] { ',' }, StringSplitOptions.RemoveEmptyEntries))
             {
                 query = query.Include(includeProperty);
             }
 
-            if (orderBy != null)
+            /// order is a predicate that is sent to the repository and based on it the query is ordered
+            if(order != null)
             {
-                return await orderBy(query).ToListAsync();
+                return await query.OrderBy(order).ToListAsync();
             }
             else
             {
-                return await query.ToListAsync();
+                if (order == null && orderBy != null)
+                {
+                    return await orderBy(query).ToListAsync();
+                }
+                else
+                {
+                    return await query.ToListAsync();
+                }
             }
         }
 
