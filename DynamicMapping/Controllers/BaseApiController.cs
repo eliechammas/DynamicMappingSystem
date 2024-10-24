@@ -17,6 +17,7 @@ namespace DynamicMapping.Controllers
                 /// common authorization check (Access to common information such as user ID or access token)
                 /// common methods (formatting response)
                 /// handling language and localization for responses
+                /// 
             }
         }
     }
