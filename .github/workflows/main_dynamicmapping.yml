@@ -33,4 +33,35 @@ jobs:
           name: .net-app
           path: ./DynamicMapping/DynamicMapping.sln
 
+
+  deploy:
+    runs-on: windows-latest
+    needs: publish
+    environment:
+      name: 'Production'
+      url: ${{ steps.deploy-to-webapp.outputs.webapp-url }}
+    permissions:
+      id-token: write #This is required for requesting the JWT
+
+    steps:
+      - name: Download artifact from build job
+        uses: actions/download-artifact@v4
+        with:
+          name: .net-app
+      
+      - name: Login to Azure
+        uses: azure/login@v2
+        with:
+          client-id: ${{ secrets.AZUREAPPSERVICE_CLIENTID_1C6FF87628AE4F8EAF82453908756690 }}
+          tenant-id: ${{ secrets.AZUREAPPSERVICE_TENANTID_6C15B2D6B7484A35A13C553C6FCFAC49 }}
+          subscription-id: ${{ secrets.AZUREAPPSERVICE_SUBSCRIPTIONID_0B00955D96244C458A734DFF31E273D3 }}
+
+      - name: Deploy to Azure Web App
+        id: deploy-to-webapp
+        uses: azure/webapps-deploy@v3
+        with:
+          app-name: 'DynamicMapping'
+          slot-name: 'Production'
+          package: .
+          
   
