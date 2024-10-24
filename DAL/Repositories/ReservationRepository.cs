@@ -18,16 +18,7 @@ namespace DAL.Repositories
         }
 
         #region CRUD
-        public override async IAsyncEnumerable<Reservation> GetAllAsync()
-        {
-            var recordsToReturn = dbSet.AsAsyncEnumerable();
-
-            await foreach (var record in recordsToReturn)
-            {
-                yield return record;
-            }
-        }
-
+        
         public override async Task<IEnumerable<Reservation>> GetAll()
         {
             var recordsToReturn = await dbSet.ToListAsync();

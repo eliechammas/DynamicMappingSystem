@@ -13,7 +13,7 @@ namespace DAL.Services
     public class GenericRepository<T> : IGenericRepository<T> where T : class
     {
         protected DataContext context;
-        internal DbSet<T> dbSet;
+        protected DbSet<T> dbSet;
         protected readonly ILogger _logger;
 
         public GenericRepository(DataContext context, ILogger logger)

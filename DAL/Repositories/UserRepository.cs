@@ -18,16 +18,6 @@ namespace DAL.Repositories
         }
 
         #region CRUD
-        public override async IAsyncEnumerable<User> GetAllAsync()
-        {
-            var recordsToReturn = dbSet.AsAsyncEnumerable();
-
-            await foreach (var record in recordsToReturn)
-            {
-                yield return record;
-            }
-        }
-
         public override async Task<IEnumerable<User>> GetAll()
         {
             return await dbSet.ToListAsync();
@@ -62,18 +52,6 @@ namespace DAL.Repositories
             }
             return false;
         }
-
-        public override async Task<Boolean> Delete(long id)
-        {
-            var exist = await dbSet.FirstOrDefaultAsync(x => x.ID == id);
-
-            if (exist == null) return false;
-
-            dbSet.Remove(exist);
-                
-            return true;
-        }
-
         #endregion
     }
 }
