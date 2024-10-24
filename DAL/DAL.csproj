@@ -20,7 +20,7 @@
 
   <ItemGroup>
     <Reference Include="DataModels">
-      <HintPath>..\..\Leben in Deutschland\Gelegenheiten &amp; Interviews\DIRS21\DataModels\bin\Debug\net8.0\DataModels.dll</HintPath>
+      <HintPath>..\DataModels\bin\Debug\net8.0\DataModels.dll</HintPath>
     </Reference>
   </ItemGroup>
 
