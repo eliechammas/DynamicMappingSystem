@@ -65,11 +65,11 @@ namespace DynamicMapping
             var app = builder.Build();
 
             // Configure the HTTP request pipeline.
-            if (app.Environment.IsDevelopment())
-            {
+            //if (app.Environment.IsDevelopment())
+            //{
                 app.UseSwagger();
                 app.UseSwaggerUI();
-            }
+            //}
 
 
             /// Static class registration to allow using IConfiguration in all the app classes
