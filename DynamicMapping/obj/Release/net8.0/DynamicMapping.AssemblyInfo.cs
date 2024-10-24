@@ -12,9 +12,9 @@ using System;
 using System.Reflection;
 
 [assembly: System.Reflection.AssemblyCompanyAttribute("DynamicMapping")]
-[assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
+[assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+07c74837d0016eb58c45c298df6d37c4b29a59e5")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0955ff4b8df0d063b9fc9d3b45112a7224e84fce")]
 [assembly: System.Reflection.AssemblyProductAttribute("DynamicMapping")]
 [assembly: System.Reflection.AssemblyTitleAttribute("DynamicMapping")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

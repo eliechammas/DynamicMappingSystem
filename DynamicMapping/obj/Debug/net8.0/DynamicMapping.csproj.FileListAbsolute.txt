@@ -72,6 +72,7 @@ C:\My Documents\DIRS21\DynamicMapping\obj\Debug\net8.0\DynamicMapping.AssemblyIn
 C:\My Documents\DIRS21\DynamicMapping\obj\Debug\net8.0\DynamicMapping.csproj.CoreCompileInputs.cache
 C:\My Documents\DIRS21\DynamicMapping\obj\Debug\net8.0\DynamicMapping.MvcApplicationPartsAssemblyInfo.cs
 C:\My Documents\DIRS21\DynamicMapping\obj\Debug\net8.0\DynamicMapping.MvcApplicationPartsAssemblyInfo.cache
+C:\My Documents\DIRS21\DynamicMapping\obj\Debug\net8.0\DynamicMapping.sourcelink.json
 C:\My Documents\DIRS21\DynamicMapping\obj\Debug\net8.0\staticwebassets.build.json
 C:\My Documents\DIRS21\DynamicMapping\obj\Debug\net8.0\staticwebassets.development.json
 C:\My Documents\DIRS21\DynamicMapping\obj\Debug\net8.0\staticwebassets\msbuild.DynamicMapping.Microsoft.AspNetCore.StaticWebAssets.props
@@ -86,4 +87,3 @@ C:\My Documents\DIRS21\DynamicMapping\obj\Debug\net8.0\refint\DynamicMapping.dll
 C:\My Documents\DIRS21\DynamicMapping\obj\Debug\net8.0\DynamicMapping.pdb
 C:\My Documents\DIRS21\DynamicMapping\obj\Debug\net8.0\DynamicMapping.genruntimeconfig.cache
 C:\My Documents\DIRS21\DynamicMapping\obj\Debug\net8.0\ref\DynamicMapping.dll
-C:\My Documents\DIRS21\DynamicMapping\obj\Debug\net8.0\DynamicMapping.sourcelink.json
