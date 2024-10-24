@@ -18,3 +18,8 @@ Unable to resolve service for type 'BLL.Services.Interfaces.IReservationService'
 2024-10-14 05:20:27.578 +02:00 [ERR] Error Message: 
 Unable to resolve service for type 'BLL.Services.Interfaces.IReservationService' while attempting to activate 'DynamicMapping.Controllers.ReservationController'.
 2024-10-14 05:20:27.582 +02:00 [INF] Instance: POST /api/Reservation/SendReservation
+2024-10-14 07:58:08.784 +02:00 [ERR] ERROR TRACE: 500 - JsonException
+
+2024-10-14 07:58:08.853 +02:00 [ERR] Error Message: 
+'D' is an invalid start of a value. Path: $ | LineNumber: 0 | BytePositionInLine: 0.
+2024-10-14 07:58:08.857 +02:00 [INF] Instance: POST /api/Room/Send
