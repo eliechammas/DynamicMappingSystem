@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "efyOaQnc9LuAu+UQryxm9a/vNnhsfDMe4SnrHT0KY+SBzbXcEf8eszz0GiCw+htaQEMNgo/UiI35Bibj4wMQiA==",
+  "dgSpecHash": "CwwZ6J2rBpA=",
   "success": true,
-  "projectFilePath": "C:\\My Documents\\DIRS21\\DynamicMapping\\DynamicMapping.csproj",
+  "projectFilePath": "C:\\MyDocuments\\DIRS21 - 25.10.2024\\DIRS21\\DynamicMapping\\DynamicMapping.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\eliec\\.nuget\\packages\\automapper\\13.0.1\\automapper.13.0.1.nupkg.sha512",
     "C:\\Users\\eliec\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",

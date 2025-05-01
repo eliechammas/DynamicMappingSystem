@@ -16,3 +16,21 @@ C:\My Documents\DIRS21\BLL\obj\Release\net8.0\BLL.dll
 C:\My Documents\DIRS21\BLL\obj\Release\net8.0\refint\BLL.dll
 C:\My Documents\DIRS21\BLL\obj\Release\net8.0\BLL.pdb
 C:\My Documents\DIRS21\BLL\obj\Release\net8.0\ref\BLL.dll
+C:\MyDocuments\DIRS21 - 25.10.2024\DIRS21\BLL\bin\Release\net8.0\BLL.deps.json
+C:\MyDocuments\DIRS21 - 25.10.2024\DIRS21\BLL\bin\Release\net8.0\BLL.dll
+C:\MyDocuments\DIRS21 - 25.10.2024\DIRS21\BLL\bin\Release\net8.0\BLL.pdb
+C:\MyDocuments\DIRS21 - 25.10.2024\DIRS21\BLL\bin\Release\net8.0\DAL.dll
+C:\MyDocuments\DIRS21 - 25.10.2024\DIRS21\BLL\bin\Release\net8.0\DataModels.dll
+C:\MyDocuments\DIRS21 - 25.10.2024\DIRS21\BLL\bin\Release\net8.0\DAL.pdb
+C:\MyDocuments\DIRS21 - 25.10.2024\DIRS21\BLL\bin\Release\net8.0\DataModels.pdb
+C:\MyDocuments\DIRS21 - 25.10.2024\DIRS21\BLL\obj\Release\net8.0\BLL.csproj.AssemblyReference.cache
+C:\MyDocuments\DIRS21 - 25.10.2024\DIRS21\BLL\obj\Release\net8.0\BLL.GeneratedMSBuildEditorConfig.editorconfig
+C:\MyDocuments\DIRS21 - 25.10.2024\DIRS21\BLL\obj\Release\net8.0\BLL.AssemblyInfoInputs.cache
+C:\MyDocuments\DIRS21 - 25.10.2024\DIRS21\BLL\obj\Release\net8.0\BLL.AssemblyInfo.cs
+C:\MyDocuments\DIRS21 - 25.10.2024\DIRS21\BLL\obj\Release\net8.0\BLL.csproj.CoreCompileInputs.cache
+C:\MyDocuments\DIRS21 - 25.10.2024\DIRS21\BLL\obj\Release\net8.0\BLL.sourcelink.json
+C:\MyDocuments\DIRS21 - 25.10.2024\DIRS21\BLL\obj\Release\net8.0\BLL.csproj.Up2Date
+C:\MyDocuments\DIRS21 - 25.10.2024\DIRS21\BLL\obj\Release\net8.0\BLL.dll
+C:\MyDocuments\DIRS21 - 25.10.2024\DIRS21\BLL\obj\Release\net8.0\refint\BLL.dll
+C:\MyDocuments\DIRS21 - 25.10.2024\DIRS21\BLL\obj\Release\net8.0\BLL.pdb
+C:\MyDocuments\DIRS21 - 25.10.2024\DIRS21\BLL\obj\Release\net8.0\ref\BLL.dll

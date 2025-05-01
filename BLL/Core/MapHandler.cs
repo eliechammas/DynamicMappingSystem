@@ -43,8 +43,9 @@ namespace BLL.Core
             foreach (var sourceProperty in objSourceProperties)
             {
                 var targetProperty = objTargetProperties.Where(a => a.Name == sourceProperty.Name 
-                                                                && a.PropertyType == sourceProperty.PropertyType 
-                                                                && a.CanWrite);
+                                                                //&& a.PropertyType == sourceProperty.PropertyType 
+                                                                //&& a.CanWrite
+                                                                );
                 if (targetProperty != null && targetProperty.Any())
                 {
                     targetProperty = targetProperty.Where(a => a.PropertyType == sourceProperty.PropertyType);

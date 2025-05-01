@@ -1,11 +1,12 @@
 {
   "Version": 1,
-  "Hash": "xrKZeriS3p6o2N+bhQTN7eORshBPiufqV2m4r3WqZ1I=",
+  "Hash": "926UnNLe7syW4v8fdOXAbAxb7qb1M+m0Be7kKDppFZA=",
   "Source": "DynamicMapping",
   "BasePath": "_content/DynamicMapping",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [],
   "DiscoveryPatterns": [],
-  "Assets": []
+  "Assets": [],
+  "Endpoints": []
 }

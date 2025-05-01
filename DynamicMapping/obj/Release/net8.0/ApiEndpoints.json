@@ -1,0 +1,106 @@
+[
+  {
+    "ContainingType": "DynamicMapping.Controllers.ReservationController",
+    "Method": "ReceiveReservationFromPartner",
+    "RelativePath": "api/Reservation/Receive",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "input",
+        "Type": "DataModels.Sections.Internal.Reservation.DTO.ReservationDto\u002BReceiveReservationInput",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "DataModels.Sections.Internal.Reservation.DTO.ReservationDto\u002BReceiveReservationOutput",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "DynamicMapping.Controllers.ReservationController",
+    "Method": "SendReservationToPartner",
+    "RelativePath": "api/Reservation/Send",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "input",
+        "Type": "DataModels.Sections.Internal.Reservation.DTO.ReservationDto\u002BSendReservationInput",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "DataModels.Sections.Internal.Reservation.DTO.ReservationDto\u002BSendReservationOutput",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "DynamicMapping.Controllers.RoomController",
+    "Method": "ReceiveRoomFromPartner",
+    "RelativePath": "api/Room/Receive",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "input",
+        "Type": "DataModels.Sections.Internal.Room.DTO.RoomDto\u002BReceiveRoomInput",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "DataModels.Sections.Internal.Room.DTO.RoomDto\u002BReceiveRoomOutput",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "DynamicMapping.Controllers.RoomController",
+    "Method": "SendRoomToPartner",
+    "RelativePath": "api/Room/Send",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "input",
+        "Type": "DataModels.Sections.Internal.Room.DTO.RoomDto\u002BSendRoomInput",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "DataModels.Sections.Internal.Room.DTO.RoomDto\u002BSendRoomOutput",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  }
+]

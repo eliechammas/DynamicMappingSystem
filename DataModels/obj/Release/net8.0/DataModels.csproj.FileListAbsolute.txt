@@ -10,3 +10,15 @@ C:\My Documents\DIRS21\DataModels\obj\Release\net8.0\DataModels.dll
 C:\My Documents\DIRS21\DataModels\obj\Release\net8.0\refint\DataModels.dll
 C:\My Documents\DIRS21\DataModels\obj\Release\net8.0\DataModels.pdb
 C:\My Documents\DIRS21\DataModels\obj\Release\net8.0\ref\DataModels.dll
+C:\MyDocuments\DIRS21 - 25.10.2024\DIRS21\DataModels\bin\Release\net8.0\DataModels.deps.json
+C:\MyDocuments\DIRS21 - 25.10.2024\DIRS21\DataModels\bin\Release\net8.0\DataModels.dll
+C:\MyDocuments\DIRS21 - 25.10.2024\DIRS21\DataModels\bin\Release\net8.0\DataModels.pdb
+C:\MyDocuments\DIRS21 - 25.10.2024\DIRS21\DataModels\obj\Release\net8.0\DataModels.GeneratedMSBuildEditorConfig.editorconfig
+C:\MyDocuments\DIRS21 - 25.10.2024\DIRS21\DataModels\obj\Release\net8.0\DataModels.AssemblyInfoInputs.cache
+C:\MyDocuments\DIRS21 - 25.10.2024\DIRS21\DataModels\obj\Release\net8.0\DataModels.AssemblyInfo.cs
+C:\MyDocuments\DIRS21 - 25.10.2024\DIRS21\DataModels\obj\Release\net8.0\DataModels.csproj.CoreCompileInputs.cache
+C:\MyDocuments\DIRS21 - 25.10.2024\DIRS21\DataModels\obj\Release\net8.0\DataModels.sourcelink.json
+C:\MyDocuments\DIRS21 - 25.10.2024\DIRS21\DataModels\obj\Release\net8.0\DataModels.dll
+C:\MyDocuments\DIRS21 - 25.10.2024\DIRS21\DataModels\obj\Release\net8.0\refint\DataModels.dll
+C:\MyDocuments\DIRS21 - 25.10.2024\DIRS21\DataModels\obj\Release\net8.0\DataModels.pdb
+C:\MyDocuments\DIRS21 - 25.10.2024\DIRS21\DataModels\obj\Release\net8.0\ref\DataModels.dll

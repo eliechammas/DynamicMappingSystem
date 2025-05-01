@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "uKIV2C7pGk0ONK88HLbq+eGMp1GGFkMOT+5OajyIaqq08W6sZlAfg5+nlmbVhKpv2ktrvAttlhokLQMqQrpKpA==",
+  "dgSpecHash": "zlY0lGgWMTY=",
   "success": true,
-  "projectFilePath": "C:\\My Documents\\DIRS21\\BLL\\BLL.csproj",
+  "projectFilePath": "C:\\MyDocuments\\DIRS21 - 25.10.2024\\DIRS21\\BLL\\BLL.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\eliec\\.nuget\\packages\\automapper\\13.0.1\\automapper.13.0.1.nupkg.sha512",
     "C:\\Users\\eliec\\.nuget\\packages\\microsoft.entityframeworkcore\\8.0.10\\microsoft.entityframeworkcore.8.0.10.nupkg.sha512",

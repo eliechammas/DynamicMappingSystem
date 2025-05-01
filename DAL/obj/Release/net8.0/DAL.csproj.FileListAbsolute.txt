@@ -16,3 +16,21 @@ C:\My Documents\DIRS21\DAL\obj\Release\net8.0\refint\DAL.dll
 C:\My Documents\DIRS21\DAL\obj\Release\net8.0\DAL.pdb
 C:\My Documents\DIRS21\DAL\obj\Release\net8.0\DAL.genruntimeconfig.cache
 C:\My Documents\DIRS21\DAL\obj\Release\net8.0\ref\DAL.dll
+C:\MyDocuments\DIRS21 - 25.10.2024\DIRS21\DAL\bin\Release\net8.0\DAL.deps.json
+C:\MyDocuments\DIRS21 - 25.10.2024\DIRS21\DAL\bin\Release\net8.0\DAL.runtimeconfig.json
+C:\MyDocuments\DIRS21 - 25.10.2024\DIRS21\DAL\bin\Release\net8.0\DAL.dll
+C:\MyDocuments\DIRS21 - 25.10.2024\DIRS21\DAL\bin\Release\net8.0\DAL.pdb
+C:\MyDocuments\DIRS21 - 25.10.2024\DIRS21\DAL\bin\Release\net8.0\DataModels.dll
+C:\MyDocuments\DIRS21 - 25.10.2024\DIRS21\DAL\bin\Release\net8.0\DataModels.pdb
+C:\MyDocuments\DIRS21 - 25.10.2024\DIRS21\DAL\obj\Release\net8.0\DAL.csproj.AssemblyReference.cache
+C:\MyDocuments\DIRS21 - 25.10.2024\DIRS21\DAL\obj\Release\net8.0\DAL.GeneratedMSBuildEditorConfig.editorconfig
+C:\MyDocuments\DIRS21 - 25.10.2024\DIRS21\DAL\obj\Release\net8.0\DAL.AssemblyInfoInputs.cache
+C:\MyDocuments\DIRS21 - 25.10.2024\DIRS21\DAL\obj\Release\net8.0\DAL.AssemblyInfo.cs
+C:\MyDocuments\DIRS21 - 25.10.2024\DIRS21\DAL\obj\Release\net8.0\DAL.csproj.CoreCompileInputs.cache
+C:\MyDocuments\DIRS21 - 25.10.2024\DIRS21\DAL\obj\Release\net8.0\DAL.sourcelink.json
+C:\MyDocuments\DIRS21 - 25.10.2024\DIRS21\DAL\obj\Release\net8.0\DAL.csproj.Up2Date
+C:\MyDocuments\DIRS21 - 25.10.2024\DIRS21\DAL\obj\Release\net8.0\DAL.dll
+C:\MyDocuments\DIRS21 - 25.10.2024\DIRS21\DAL\obj\Release\net8.0\refint\DAL.dll
+C:\MyDocuments\DIRS21 - 25.10.2024\DIRS21\DAL\obj\Release\net8.0\DAL.pdb
+C:\MyDocuments\DIRS21 - 25.10.2024\DIRS21\DAL\obj\Release\net8.0\DAL.genruntimeconfig.cache
+C:\MyDocuments\DIRS21 - 25.10.2024\DIRS21\DAL\obj\Release\net8.0\ref\DAL.dll

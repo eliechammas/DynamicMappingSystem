@@ -1,7 +1,11 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\My Documents\\DIRS21\\DynamicMapping\\",
-  "Documents": [],
+  "WorkspaceRootPath": "C:\\MyDocuments\\DIRS21 - 25.10.2024\\DIRS21\\DynamicMapping\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{0B993E95-0C99-41F6-8021-AE306DC25F62}|..\\DAL\\DAL.csproj|c:\\mydocuments\\dirs21 - 25.10.2024\\dirs21\\dal\\repositories\\reservationrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,12 +13,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 2,
           "Children": [
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
-            },
             {
               "$type": "Bookmark",
               "Name": "ST:128:0:{13b12e3e-c1b4-4539-9371-4fe9a0d523fc}"
@@ -22,6 +22,19 @@
             {
               "$type": "Bookmark",
               "Name": "ST:129:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ReservationRepository.cs",
+              "DocumentMoniker": "C:\\MyDocuments\\DIRS21 - 25.10.2024\\DIRS21\\DAL\\Repositories\\ReservationRepository.cs",
+              "RelativeDocumentMoniker": "..\\DAL\\Repositories\\ReservationRepository.cs",
+              "ToolTip": "C:\\MyDocuments\\DIRS21 - 25.10.2024\\DIRS21\\DAL\\Repositories\\ReservationRepository.cs",
+              "RelativeToolTip": "..\\DAL\\Repositories\\ReservationRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-01T11:34:04.955Z",
+              "EditorCaption": ""
             }
           ]
         }

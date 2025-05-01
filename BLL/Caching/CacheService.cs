@@ -38,12 +38,7 @@ namespace BLL.Caching
         async Task ICacheService.SetAsync<T>(string cacheKey, T value)
         {
             string valueToChache = JsonSerializer.Serialize<T>(value);
-            await _cache.SetStringAsync(cacheKey
-                                        , valueToChache
-                                        , new DistributedCacheEntryOptions
-                                          {
-                                            AbsoluteExpirationRelativeToNow = TimeSpan.FromMinutes(10)
-                                          });
+            await _cache.SetStringAsync(cacheKey, valueToChache);
         }
 
 

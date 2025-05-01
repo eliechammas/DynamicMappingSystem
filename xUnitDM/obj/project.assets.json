@@ -1349,11 +1349,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\My Documents\\DIRS21\\xUnitDM\\xUnitDM.csproj",
+      "projectUniqueName": "C:\\MyDocuments\\DIRS21 - 25.10.2024\\DIRS21\\xUnitDM\\xUnitDM.csproj",
       "projectName": "xUnitDM",
-      "projectPath": "C:\\My Documents\\DIRS21\\xUnitDM\\xUnitDM.csproj",
+      "projectPath": "C:\\MyDocuments\\DIRS21 - 25.10.2024\\DIRS21\\xUnitDM\\xUnitDM.csproj",
       "packagesPath": "C:\\Users\\eliec\\.nuget\\packages\\",
-      "outputPath": "C:\\My Documents\\DIRS21\\xUnitDM\\obj\\",
+      "outputPath": "C:\\MyDocuments\\DIRS21 - 25.10.2024\\DIRS21\\xUnitDM\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -1386,7 +1386,8 @@
         "enableAudit": "true",
         "auditLevel": "low",
         "auditMode": "direct"
-      }
+      },
+      "SdkAnalysisLevel": "9.0.100"
     },
     "frameworks": {
       "net8.0": {
@@ -1448,7 +1449,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.306/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.105/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

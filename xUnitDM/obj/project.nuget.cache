@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "JjlHlWe73s3QJhmfk/4fCuGF8seIBzO9ob7+osUnwUUIe3Sqr6UfOjFTWgazQ00myK0RBd5/ipjwCg+rMlA8eQ==",
+  "dgSpecHash": "xUUTgYUEyYU=",
   "success": true,
-  "projectFilePath": "C:\\My Documents\\DIRS21\\xUnitDM\\xUnitDM.csproj",
+  "projectFilePath": "C:\\MyDocuments\\DIRS21 - 25.10.2024\\DIRS21\\xUnitDM\\xUnitDM.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\eliec\\.nuget\\packages\\castle.core\\5.1.1\\castle.core.5.1.1.nupkg.sha512",
     "C:\\Users\\eliec\\.nuget\\packages\\coverlet.collector\\6.0.2\\coverlet.collector.6.0.2.nupkg.sha512",

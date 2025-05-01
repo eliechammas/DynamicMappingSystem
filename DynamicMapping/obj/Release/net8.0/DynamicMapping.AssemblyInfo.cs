@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("DynamicMapping")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+fc147b4abb64d4f33cd7066cab88c01d7ca3b0c9")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+78fa468714c6874c2e5cce3ae4438580d9359c33")]
 [assembly: System.Reflection.AssemblyProductAttribute("DynamicMapping")]
 [assembly: System.Reflection.AssemblyTitleAttribute("DynamicMapping")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -82,12 +82,11 @@ namespace DynamicMapping
             /// End Register ExceptionHandler Middleware
 
             app.UseHttpsRedirection();
+            app.UseCors();
             app.UseStaticFiles();
             app.UseRouting();
-            app.UseCors();
-
+            
             app.UseAuthorization();
-
 
             app.MapControllers();
 
