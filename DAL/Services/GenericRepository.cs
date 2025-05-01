@@ -24,7 +24,6 @@ namespace DAL.Services
         }
 
         #region CRUD
-        
         public virtual async IAsyncEnumerable<T> GetAllAsync() 
         {
             var query = dbSet.AsAsyncEnumerable();
