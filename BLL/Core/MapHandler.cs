@@ -28,6 +28,7 @@ namespace BLL.Core
         /// <returns>Target Data Mapped</returns>
         public static Object Map(Object data, string Source, string Target)
         {
+            /// the activator class contains methods to create type of objects 
             var objSource = Activator.CreateInstance("DataModels", Source).Unwrap();
             var objTarget = Activator.CreateInstance("DataModels", Target).Unwrap();
 
@@ -37,6 +38,7 @@ namespace BLL.Core
             // Assign data to the source model instance
             objSource = data;
 
+            /// PropertyInfo discovers the attributes of a property and provides access to property metadata
             PropertyInfo[] objSourceProperties = objSourceType.GetProperties();
             PropertyInfo[] objTargetProperties = objTargetType.GetProperties();
 
