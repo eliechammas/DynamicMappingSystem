@@ -19,7 +19,7 @@ namespace xUnitDM.Controllers
     public class RoomControllerTest
     {
         private readonly Mock<IRoomService> _roomSrv;
-        private IConfiguration _configuration;
+        private readonly IConfiguration _configuration;
         
         public RoomControllerTest()
         {
