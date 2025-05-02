@@ -1,0 +1,369 @@
+{
+  "openapi": "3.0.1",
+  "info": {
+    "title": "DynamicMapping",
+    "version": "1.0"
+  },
+  "paths": {
+    "/api/Reservation/Send": {
+      "post": {
+        "tags": [
+          "Reservation"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/SendReservationInput"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/SendReservationInput"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/SendReservationInput"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/SendReservationOutput"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SendReservationOutput"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SendReservationOutput"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Reservation/Receive": {
+      "post": {
+        "tags": [
+          "Reservation"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ReceiveReservationInput"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ReceiveReservationInput"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/ReceiveReservationInput"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/ReceiveReservationOutput"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ReceiveReservationOutput"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ReceiveReservationOutput"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Room/Send": {
+      "post": {
+        "tags": [
+          "Room"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/SendRoomInput"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/SendRoomInput"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/SendRoomInput"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/SendRoomOutput"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SendRoomOutput"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SendRoomOutput"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Room/Receive": {
+      "post": {
+        "tags": [
+          "Room"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ReceiveRoomInput"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ReceiveRoomInput"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/ReceiveRoomInput"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/ReceiveRoomOutput"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ReceiveRoomOutput"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ReceiveRoomOutput"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "ReceiveReservationInput": {
+        "type": "object",
+        "properties": {
+          "sourceType": {
+            "type": "string",
+            "nullable": true
+          },
+          "sourceTypeModel": {
+            "type": "string",
+            "nullable": true
+          },
+          "sourceModel": {
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "ReceiveReservationOutput": {
+        "type": "object",
+        "properties": {
+          "returnStatus": {
+            "$ref": "#/components/schemas/ReturnStatus"
+          },
+          "returnStatuses": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/ReturnStatus"
+            },
+            "nullable": true
+          },
+          "succeeded": {
+            "type": "boolean"
+          }
+        },
+        "additionalProperties": false
+      },
+      "ReceiveRoomInput": {
+        "type": "object",
+        "properties": {
+          "sourceType": {
+            "type": "string",
+            "nullable": true
+          },
+          "sourceTypeModel": {
+            "type": "string",
+            "nullable": true
+          },
+          "sourceModel": {
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "ReceiveRoomOutput": {
+        "type": "object",
+        "properties": {
+          "returnStatus": {
+            "$ref": "#/components/schemas/ReturnStatus"
+          },
+          "returnStatuses": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/ReturnStatus"
+            },
+            "nullable": true
+          },
+          "succeeded": {
+            "type": "boolean"
+          }
+        },
+        "additionalProperties": false
+      },
+      "ReturnStatus": {
+        "type": "object",
+        "properties": {
+          "returnCode": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "returnMessage": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "SendReservationInput": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "targetType": {
+            "type": "string",
+            "nullable": true
+          },
+          "targetTypeModel": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "SendReservationOutput": {
+        "type": "object",
+        "properties": {
+          "returnStatus": {
+            "$ref": "#/components/schemas/ReturnStatus"
+          },
+          "returnStatuses": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/ReturnStatus"
+            },
+            "nullable": true
+          },
+          "targetModel": {
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "SendRoomInput": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "targetType": {
+            "type": "string",
+            "nullable": true
+          },
+          "targetTypeModel": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "SendRoomOutput": {
+        "type": "object",
+        "properties": {
+          "returnStatus": {
+            "$ref": "#/components/schemas/ReturnStatus"
+          },
+          "returnStatuses": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/ReturnStatus"
+            },
+            "nullable": true
+          },
+          "targetType": {
+            "type": "string",
+            "nullable": true
+          },
+          "targetModel": {
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      }
+    }
+  }
+}

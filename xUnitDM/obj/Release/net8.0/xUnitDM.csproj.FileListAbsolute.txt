@@ -126,8 +126,8 @@ C:\My Documents\DIRS21\xUnitDM\obj\Release\net8.0\refint\xUnitDM.dll
 C:\My Documents\DIRS21\xUnitDM\obj\Release\net8.0\xUnitDM.pdb
 C:\My Documents\DIRS21\xUnitDM\obj\Release\net8.0\xUnitDM.genruntimeconfig.cache
 C:\My Documents\DIRS21\xUnitDM\obj\Release\net8.0\ref\xUnitDM.dll
-C:\MyDocuments\DIRS21 - 25.10.2024\DIRS21\xUnitDM\bin\Release\net8.0\testhost.exe
 C:\MyDocuments\DIRS21 - 25.10.2024\DIRS21\xUnitDM\bin\Release\net8.0\testhost.dll
+C:\MyDocuments\DIRS21 - 25.10.2024\DIRS21\xUnitDM\bin\Release\net8.0\testhost.exe
 C:\MyDocuments\DIRS21 - 25.10.2024\DIRS21\xUnitDM\bin\Release\net8.0\xunit.runner.visualstudio.testadapter.dll
 C:\MyDocuments\DIRS21 - 25.10.2024\DIRS21\xUnitDM\bin\Release\net8.0\xunit.runner.reporters.netcoreapp10.dll
 C:\MyDocuments\DIRS21 - 25.10.2024\DIRS21\xUnitDM\bin\Release\net8.0\xunit.runner.utility.netcoreapp10.dll

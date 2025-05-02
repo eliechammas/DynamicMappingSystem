@@ -67,7 +67,7 @@ namespace xUnitDM.Controllers
             SendRoomInput input = new SendRoomInput();
             SendRoomOutput output = new SendRoomOutput();
             input.Id = 0;
-            input.TargetType = "Goog";
+            input.TargetType = "Google";
             input.TargetTypeModel = string.Empty;
 
             var context = new HttpContextMock();
