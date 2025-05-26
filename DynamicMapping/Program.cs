@@ -92,7 +92,7 @@ namespace DynamicMapping
 
             app.Run();
 
-            // Git changes on main branch
+            // Git changes fix broken email address 
         }
     }
 }
