@@ -91,6 +91,8 @@ namespace DynamicMapping
             app.MapControllers();
 
             app.Run();
+
+            // Git Revision
         }
     }
 }
