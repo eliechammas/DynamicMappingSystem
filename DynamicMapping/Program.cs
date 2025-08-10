@@ -71,7 +71,6 @@ namespace DynamicMapping
                 app.UseSwaggerUI();
             //}
 
-
             /// Static class registration to allow using IConfiguration in all the app classes
             AppSettingsHelper.AppSettingsConfigure(Configuration);
 
