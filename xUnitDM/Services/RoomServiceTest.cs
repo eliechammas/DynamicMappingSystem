@@ -12,6 +12,7 @@ using Microsoft.Extensions.Configuration;
 using BLL.Caching;
 using BLL.Common;
 
+
 namespace xUnitDM.Services
 {
     public class RoomServiceTest
@@ -54,7 +55,7 @@ namespace xUnitDM.Services
             Assert.NotNull(result.TargetModel);
             #endregion
         }
-
-
     }
 }
+
+
